@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+    <!--------- css -------->
+    <style type="text/css">
+        .form {
+            border: 1px solid black;
+            padding: 70px 40px;
+            border-radius: 10px;
+            margin: 50px 100px;
+            background-color:lemonchiffon;
+        }
+
+        input {
+            margin-bottom: 20px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        label{
+            font-size: 20px;
+        }
+        .output{
+           margin-top:40px;    
+        }
+        .output span{
+            line-height:30px;
+            font-size: 20px;
+        }
+        #mybtn{
+            font-size:18px;
+            padding:5px 10px;
+            border-radius:10px;
+        }
+        button:hover{
+            background-color:cornflowerblue;
+            color: #ffff;
+        }
+        button[type="submit"]{
+           width:10%;
+
+        }
+        input:hover{
+            background-color:#dfdfdfdf;
+        }
+    </style>
+ 
+</head>
+
+<body>
+    <div>
+        <div class="form">
+            <h1>FORM </h1>
+            <label>Email-id : </label>
+            <input type="email" id="Email_id" placeholder="Enter email"><br>
+            <label>First Name : </label>
+            <input type="text" id="first_name" placeholder=" Enter first name"></br>
+            <label>Last Name : </label>
+            <input type="text" id="last_name" placeholder=" Enter last name"></br>
+            <label>Age : </label>
+            <input type="number" name="age" id="age" placeholder=" Enter age">
+            <button type="button" class="age" onclick="age_output()">Age Check</button><br>
+            <button type="submit" id="mybtn" onclick="form_output()">SUBMIT</button>
+            <div class="output">
+                <span id="emailid"></span><br>
+                <span id="firstname"></span><br>
+                <span id="lastname"></span><br>
+             </div>
+        </div>
+        
+    </div>
+
+    <script type="text/javascript" src="string.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" cont ent="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment-1</title>
+    <style>
+        body{
+            background-color: rgba(222, 184, 135, 0.555);
+            text-align: center;
+            padding-top: 100px;
+        }
+        .container h1{
+            font-style: italic;
+        }
+        .container input {
+            padding:10px;
+            border-radius: 5px;
+            border: none;
+            width: 30%;
+            margin-top: 20px;
+        }
+        .container button{
+            margin-top: 10px;
+            padding:10px 30px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 15px;
+            color: #fff;
+            border: none;
+        }
+        .container button[type='submit']{
+            background-color: darkcyan;  
+        }
+        .container button[type='button']{
+            background-color:red;
+        }
+        .contaoner button:hover{
+            border:1px solid #111;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Enter the amount to check what Product Ashish can buy..... </h1>
+        <input type="text" placeholder="Enter the amount" id="input"><br>
+        <button type="submit" onclick="submit()">SUBMIT</button>
+        <button type="button" onclick="clr()">Clear</button>
+    </div>
+
+    <script src="ass1.js"></script>
+</body>
+
+</html>
