@@ -20,15 +20,3 @@ function form_output() {
         alert( "You are kid");   
     }
 }
-// function age_output() {
-//     var age = document.getElementById('age').value;
-//     if (age == '') {
-//         alert("Please enter the age");
-//     }
-//     else if (age > 10) {
-//         alert("You are genuis");
-//     }
-//     else {
-//         alert("You are kid");   
-//     }
-// }
