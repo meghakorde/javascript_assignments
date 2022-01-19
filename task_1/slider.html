@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>slider</title>
+    <style>
+        .container{
+            background-color: cadetblue;
+        }
+      
+      .review {
+        width: 500px;
+        height: 500px;
+        margin: auto;
+        background-color: #ffff;
+        border-radius: 10px;
+        font-weight: bold;
+      }
+      .img-container{
+        width:100%;
+      }
+      .form-container{
+        width: 500px;
+        height: 200px;
+        margin: auto;
+        background-color: #ffff;
+        border-radius: 10px;
+      }
+      .form-container input{
+        border-radius: 5px;
+      }
+      .form-container label{
+       line-height: 35px;
+      }
+      .img-container img{
+        width:200px;
+        height: 200px;
+      }
+      #author_name{
+        font-size: 30px;
+
+      }
+      #designation{
+        font-size: 20px;
+      }
+      #images {
+        border-radius: 50%;
+        margin-top: 40px;
+      }
+      h2{
+        font-weight: bold;
+        color:gold;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <div class="container p-5 text-center">
+      <div class="title text-white">
+        <h2 class="mb-3">Our reviews</h2>
+      </div>
+
+      <article class="review col-sm-12">
+        <div class="img-container">
+          <img id="images" src="imges/1.jpg" alt="img" />
+        </div>
+        <h4 id="author_name">Sara Singh</h4>
+        <p class="text-info" id="designation">UI Intern</p>
+        <p  id="info">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium
+          reiciendis perferendis sapiente illo aliquid. Hic.
+        </p>
+
+        <div class="mybtn m-5">
+          <button class="prev">
+            <i class="fa fa-chevron-left"></i>
+          </button>
+          <button class="next">
+            <i class="fa fa-chevron-right"></i>
+          </button>
+        </div>
+      </article>
+      <!-- next and pre btn -->
+      <div class="form">
+      <form id="mainform" class=" form-container mt-5 p-4 col-sm-12" >
+        <label>Name :</label>
+        <input type="text" name="name" id="name" placeholder="Enter name" >
+        <br/>
+        <label>Designation :</label>
+        <input type="text" name="des" id="designation" placeholder="Enter name" >
+        <br/>
+        <label>discription :</label>
+         <input type="text" name="dis" id="discription" placeholder="Describe" >
+        <br/>
+        <button type="submit" class="btn btn-success" name="formbtn" >SAVE</button>
+         <input class="btn btn-danger" type="reset" value="RESET">
+      </form>
+  </div>
+
+    </div>
+   
+
+    <script src="slider.js"></script>
+  </body>
+</html>

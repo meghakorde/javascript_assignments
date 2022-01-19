@@ -1,4 +1,4 @@
-function submit(){
+function check(){
 var price = document.getElementById('input').value;   
 var p ;
 if (price >=35){
@@ -13,8 +13,5 @@ else if(price==" "){
 }
 else{
     alert("Ashish can't buy Grocery and ice-cream, The minimum amount is 20Rs")
-}
-}
-function clr(){
-    return document.getElementById('input').value=" ";
-}
+};
+};
